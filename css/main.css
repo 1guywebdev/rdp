@@ -177,6 +177,7 @@ main::before {
   margin-left: 2rem;
   font-size: 1.2rem;
   text-align: left;
+  font-weight: 500;
 }
 .rdp-contact-display i {
   margin-right: 0.5rem;
