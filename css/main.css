@@ -65,9 +65,7 @@ main::before {
   box-shadow: 2px 2px 5px black;
   padding-bottom: 1rem;
   width: 80vw;
-  left: 50%;
-  transform: translate(-80%, 0);
-  position: fixed;
+  margin-inline: auto;
 }
 .navbar-container .navbar-heading {
   color: #80ff80;
@@ -143,7 +141,7 @@ main::before {
   text-align: center;
   color: #2C2227;
   letter-spacing: 0.2rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 .rdp-map {
   margin-top: 2rem;
