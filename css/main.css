@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(to top left, #c0c0c0 0%, #c6f1bd 50%, #c0c0c0 100%);
+}
+
+main {
+  height: 100%;
+  overflow: hidden;
+}
+
+main::before {
+  content: url("../img/pawprint_background_black_mobile.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.1;
+  height: 120%;
+  overflow: hidden;
+}
+
+.menu-spacer {
+  padding-top: 13rem;
+}
+
+.disclaimer {
+  margin-block: 1rem;
+  color: #2C2227;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.disclaimer .warning {
+  color: red;
+  text-transform: uppercase;
+}
+
+.navbar-container {
+  background-color: #b6b4b4;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+  padding-bottom: 1rem;
+  width: 80vw;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: fixed;
+}
+.navbar-container .navbar-heading {
+  color: #80ff80;
+  font-family: "Love Ya Like A Sister", Arial, Helvetica, sans-serif;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  display: flex;
+  flex-direction: column;
+}
+.navbar-container .navbar-heading .span-one {
+  font-size: 2.5rem;
+}
+.navbar-container .navbar-heading .span-two {
+  font-size: 1.5rem;
+}
+.navbar-container .navmenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+.navbar-container .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+.navbar-container .social .fa-facebook {
+  color: #065FB5;
+  text-shadow: 1px 1px 2px black;
+}
+.navbar-container .social .fa-whatsapp {
+  color: #25D366;
+  text-shadow: 1px 1px 2px black;
+}
+
+.menu-item-link {
+  color: #2C2227;
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1rem;
+  transition: 300ms;
+}
+.menu-item-link:hover {
+  opacity: 0.7;
+}
+.menu-item.active > a {
+  opacity: 0.7;
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+.rdp-name {
+  font-family: "Love Ya Like A Sister", Arial, Helvetica, sans-serif;
+  color: #80ff80;
+  text-align: center;
+  font-size: 3rem;
+  width: 90vw;
+  margin-inline: auto;
+  text-shadow: 2px 2px 5px black;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.rdp-name span {
+  font-size: 2rem;
+}
+.rdp-statement {
+  font-family: "Mali", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #2C2227;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+}
+.rdp-map {
+  margin-top: 2rem;
+  width: 300px;
+  height: 100%;
+  margin-inline: auto;
+}
+.rdp-contact-heading {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Mali", Arial, Helvetica, sans-serif;
+  color: #80ff80;
+  text-shadow: 2px 2px 2px black;
+}
+
+.rdp-contact {
+  display: flex;
+  flex-direction: column;
+}
+.rdp-contact-heading {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #80ff80;
+  text-shadow: 2px 2px 3px black;
+  font-size: 2rem;
+  font-family: "Mali", Arial, Helvetica, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.rdp-contact-display {
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  text-align: left;
+}
+.rdp-contact-display i {
+  margin-right: 0.5rem;
+  color: #80ff80;
+  text-shadow: 1px 1px 3px black;
+  transition: 150ms ease-in-out;
+}
+.rdp-contact-display a {
+  font-size: 1rem;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  color: #2C2227;
+  transition: 150ms ease-in-out;
+  text-decoration: underline;
+}
+.rdp-contact-display a:hover {
+  opacity: 0.8;
+}
+.rdp-contact-display span {
+  font-size: 1rem;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  color: #2C2227;
+}
+.rdp-contact-display-phone {
+  margin-bottom: 0.8rem;
+}
+.rdp-contact-display-phone:hover i {
+  color: #2C2227;
+  text-shadow: none;
+}
+.rdp-contact-display-email {
+  margin-bottom: 0.8rem;
+}
+.rdp-contact-display-email:hover i {
+  color: #2C2227;
+  text-shadow: none;
+}
+.rdp-contact-display-address {
+  margin-bottom: 0.9rem;
+}
+.rdp-contact-display-address:hover i {
+  color: #2C2227;
+  text-shadow: none;
+}
+.rdp-contact-display-hours {
+  margin-bottom: 0.9rem;
+}
+
+.rdp-about {
+  font-family: "Love Ya Like A Sister", Arial, Helvetica, sans-serif;
+  color: #80ff80;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px black;
+  padding-bottom: 1rem;
+}
+.rdp-about-p {
+  font-size: 1rem;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+.rdp-about-p span {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
