@@ -20,35 +20,84 @@
           <span class="container span-one">Remellie's</span>
           <span class="container span-two">Doggie Parlour</span>
         </h1>
+        <div class="social">
+          <a href="https://www.facebook.com/groups/336080777831297" target="_blank" title="See our FaceBook Page">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="https://wa.me/+27643328857" target="_blank">
+            <i class="fa fa-whatsapp" aria-hidden="true" title="Chat with us on WhatsApp"></i>
+          </a>
+        </div>
         <ul class="container text-center pb-2 navmenu">
           <li class="menu-item"><a href="index.html" class="menu-item-link">Home</a></li>
           <li class="menu-item active"><a href="about.html" class="menu-item-link">About</a></li>
           <li class="menu-item"><a href="bookings.html" class="menu-item-link">Bookings</a></li>
           <li class="menu-item"><a href="gallery.html" class="menu-item-link">Gallery</a></li>
+          <li class="menu-item"><a href="gallery.html" class="menu-item-link">Sitting</a></li>
         </ul>
       </div>
     </header>
 
     <main class="container">
-      <div class="social">
-        <a href="https://www.facebook.com/groups/336080777831297" target="_blank" title="See our FaceBook Page">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-        <a href="https://wa.me/+27643328857" target="_blank">
-          <i class="fa fa-whatsapp" aria-hidden="true" title="Chat with us on WhatsApp"></i>
-        </a>
-      </div>
+      
       <div class="rdp">
-        <h2 class="container rdp-about">About</h2>'
-        <article class="container">
+        <h2 class="container rdp-about">About</h2>
+        <article class="container about-modal">
           <p class="container rdp-about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ipsam ducimus deserunt eum libero nostrum similique, ratione beatae dignissimos laborum ipsum alias, perspiciatis eligendi esse delectus fugiat sequi quidem consectetur?
           Mollitia ducimus veniam ab a eaque vel, dolorem possimus tempore porro quis, quo rem unde fugit nostrum ut maiores nulla natus iure aperiam officiis reiciendis quod? Vero veniam explicabo consequatur?</p>
-          <img class="container-fluid rdp-about-img" src="img/rdp_cert.jpg" alt="">
+
+          <div class="row" id="aboutGallery" data-bs-toggle="modal" data-bs-target="#aboutModal">
+            <div class="container">
+              <img class="rdp-about-img" src="img/rdp_main_imgs/rdp_owner_with_cert.jpg" alt="Remellie's Certificate" data-target="#aboutImage" data-slide-to="0">
+            </div>
+          </div>
+
+          <div class="modal fade" id="aboutModal" tab-index="-1" aria-hidden="true">
+            <div class="modal-dialog model-dialog-centered">
+              <div class="modal-content">
+
+                <div class="modal-body">
+                  <div id="aboutImage" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/rdp_main_imgs/rdp_owner_with_cert.jpg" alt="First Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/rdp_main_imgs/rdp_cert.jpg" alt="Second Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/rdp_main_imgs/rdp_flyer.jpg" alt="Third Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/rdp_main_imgs/rdp_flyer_2.jpg" alt="Fourth Slide">
+                      </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#aboutImage" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#aboutImage" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                    
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
           <p class="container rdp-about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repudiandae quis corporis? Aut obcaecati sint omnis alias impedit mollitia dolores veniam atque est. Harum molestias illum, doloremque ipsa nam porro?
           Iusto molestias earum accusamus aliquid aliquam quia esse cumque nostrum ipsam dolorem enim laborum dolores unde voluptas a nobis ullam, similique eveniet nam dolorum necessitatibus, mollitia delectus. Ducimus, ipsam eos!</p>
         </article>
       </div>
-      
     </main>
 
     <footer>
@@ -60,13 +109,15 @@
       </p>
       <div class="copyright">
         <p>
-          <span>Designed and developed by 1-Guy WebDev</span>
-          <span>Copyright&nbsp;<i class="fa fa-copyright" aria-hidden="true"></i></span>
+          <span>Designed and developed by</span>
+          <span>1-Guy WebDev</span>  
+          <span>Copyright<i class="fa fa-copyright" aria-hidden="true"></i></span>       
         </p>
+        <img class="copyright-logo" src="img/1gwd_logo/1gwd-logo_clear_bg_500px.png" alt="">
       </div>
     </footer>
 
-    <script src="js/main.js" async defer></script>
+    <script src="js/about.js" async defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
   </body>
