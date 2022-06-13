@@ -12,11 +12,11 @@
     </head>
   <body>
 
-    <header class="container mt-3">
-      <div class="container navbar-container">
+    <header>
+      <div class="navbar-container">
         <h1 class="navbar-heading">
-          <span class="container span-one">Remellie's</span>
-          <span class="container span-two">Doggie Parlour</span>
+          <span class="span-one">Remellie's</span>
+          <span class="span-two">Doggie Parlour</span>
         </h1>
         <div class="social">
           <a href="https://www.facebook.com/groups/336080777831297" target="_blank" title="See our FaceBook Page">
@@ -26,7 +26,7 @@
             <i class="fa fa-whatsapp" aria-hidden="true" title="Chat with us on WhatsApp"></i>
           </a>
         </div>
-        <ul class="container text-center pb-2 navmenu">
+        <ul class="navmenu">
           <li class="menu-item"><a href="index.html" class="menu-item-link">Home</a></li>
           <li class="menu-item"><a href="about.html" class="menu-item-link">About</a></li>
           <li class="menu-item"><a href="bookings.html" class="menu-item-link">Bookings</a></li>
@@ -37,6 +37,11 @@
     </header>
 
     <main class="gallery-main">
+      <!-- Modal -->
+      <div class="gallery-modal">
+        <span class="gallery-modal-close">&times;</span>
+        <img class="gallery-modal-img">
+      </div>
       <div class="rdp">
         <h2 class="rdp-gallery">Gallery</h2>
       </div>
@@ -53,35 +58,37 @@
             <div class="text">&#8249;</div>
           </button>
           <div class="slider">
-            <img src="img/general_imgs/doggies/doggies (1).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (2).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (3).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (4).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (6).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (7).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (8).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (9).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (10).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (11).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (12).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (13).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (14).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (15).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (16).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (17).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (18).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (19).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (20).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (21).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (22).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (23).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (24).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (25).jpg" alt="">
+            <!-- Image activating modal -->
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (1).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (2).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (3).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (4).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (6).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (7).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (8).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (9).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (10).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (11).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (12).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (13).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (14).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (15).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (16).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (17).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (18).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (19).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (20).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (21).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (22).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (23).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (24).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (25).jpg" alt="">
           </div>
           <button class="handle right-handle">
             <div class="text">&#8250;</div>
           </button>
         </div>
+       
       </div>
 
       <div class="row">
@@ -94,26 +101,27 @@
             <div class="text">&#8249;</div>
           </button>
           <div class="slider">
-            <img src="img/general_imgs/doggies/doggies (26).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (27).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (28).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (29).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (30).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (31).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (32).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (33).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (34).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (35).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (36).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (37).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (38).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (39).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (40).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (41).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (42).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (43).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (44).jpg" alt="">
-            <img src="img/general_imgs/doggies/doggies (45).jpg" alt="">
+            <!-- Image activating modal -->
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (26).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (27).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (28).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (29).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (30).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (31).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (32).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (33).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (34).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (35).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (36).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (37).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (38).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (39).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (40).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (41).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (42).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (43).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (44).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/doggies/doggies (45).jpg" alt="">
           </div>
           <button class="handle right-handle">
             <div class="text">&#8250;</div>
@@ -131,23 +139,23 @@
             <div class="text">&#8249;</div>
           </button>
           <div class="slider">
-            <img src="img/general_imgs/functions/functions (1).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (2).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (3).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (4).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (5).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (6).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (7).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (8).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (9).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (10).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (11).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (12).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (13).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (14).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (15).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (16).jpg" alt="">
-            <img src="img/general_imgs/functions/functions (17).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (1).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (2).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (3).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (4).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (5).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (6).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (7).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (8).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (9).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (10).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (11).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (12).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (13).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (14).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (15).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (16).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/functions/functions (17).jpg" alt="">
           </div>
           <button class="handle right-handle">
             <div class="text">&#8250;</div>
@@ -165,20 +173,20 @@
             <div class="text">&#8249;</div>
           </button>
           <div class="slider">
-            <img src="img/general_imgs/parlour_and_staff_imgs/staff (1).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/staff (2).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/staff (3).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/staff (4).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/staff (5).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/staff (6).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/staff (7).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/staff (8).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/staff (9).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/staff (10).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/staff (11).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/staff (12).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/staff (13).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/staff (14).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/staff (1).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/staff (2).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/staff (3).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/staff (4).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/staff (5).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/staff (6).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/staff (7).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/staff (8).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/staff (9).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/staff (10).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/staff (11).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/staff (12).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/staff (13).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/staff (14).jpg" alt="">
 
           </div>
           <button class="handle right-handle">
@@ -197,18 +205,17 @@
             <div class="text">&#8249;</div>
           </button>
           <div class="slider">
-            <img src="img/general_imgs/parlour_and_staff_imgs/rdp_parlour_imgs (1).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/rdp_parlour_imgs (2).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/rdp_parlour_imgs (3).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/rdp_parlour_imgs (4).jpg" alt="">
-            <img src="img/general_imgs/parlour_and_staff_imgs/rdp_parlour_imgs (5).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/rdp_parlour_imgs (1).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/rdp_parlour_imgs (2).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/rdp_parlour_imgs (3).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/rdp_parlour_imgs (4).jpg" alt="">
+            <img class="slider-img" src="img/general_imgs/parlour_and_staff_imgs/rdp_parlour_imgs (5).jpg" alt="">
           </div>
           <button class="handle right-handle">
             <div class="text">&#8250;</div>
           </button>
         </div>
       </div>
-
     </main>
 
     <footer>
@@ -227,8 +234,9 @@
         <img class="copyright-logo" src="img/1gwd_logo/1gwd-logo_clear_bg_500px.png" alt="">
       </div>
     </footer>
-
+    
     <script src="js/gallery_carousel.js" async defer></script>
     <script src="js/gallery_modal.js" async defer></script>
+    <script src="js/jquery.js"></script>
   </body>
 </html>
